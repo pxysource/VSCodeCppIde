@@ -1,0 +1,12 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "cmake-build-x64-debug",
+            "type": "shell",
+            "command": "cmake.exe --build --preset build-x64-debug",
+            "group": "build",
+            "problemMatcher": "$msCompile"
+        }
+    ]
+}

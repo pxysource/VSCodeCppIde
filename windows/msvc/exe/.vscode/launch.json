@@ -1,0 +1,23 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Launch exe (MSVC)",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/x64-debug/DemoApp.exe",
+            "args": ["--example", "value"],
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal",
+            "preLaunchTask": "cmake-build-x64-debug",
+            "stopAtEntry": false,
+            "symbolSearchPath": "${workspaceFolder}/build/x64-debug;${env:PATH}",
+            "environment": [
+                {
+                    "name": "PATH",
+                    "value": "${workspaceFolder}/build/x64-debug;${env:PATH}"
+                }
+            ]
+        }
+    ]
+}
